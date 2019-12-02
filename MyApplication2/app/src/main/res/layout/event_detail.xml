@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.EventDetailActivity">
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/pub"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/header"
+        android:src="@drawable/pub" />
+    <TableLayout
+        android:layout_below="@id/pub"
+        android:id="@+id/table_1"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/event_location_1"
+                android:textSize="14dp"
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event"
+                android:textSize="14dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/type_event"
+        android:layout_below="@id/table_1"
+        android:textSize="14dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red" />
+    <TextView
+        android:id="@+id/event_period"
+        android:layout_below="@+id/type_event"
+        android:textSize="14dp"
+        android:textColor="@color/light_grey_4"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/barre_1"
+        android:layout_below="@id/event_period"
+        android:src="@drawable/barre"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:id="@+id/table_2"
+        android:layout_below="@id/barre_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Lieu"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_width="80dp"
+                android:background="@color/light_grey_4"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event_location_2"
+                android:textSize="14dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/light_grey_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Tarifs"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="80dp"
+                android:background="@color/light_grey_4"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event_price"
+                android:textSize="14dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/light_grey_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Contact"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="80dp"
+                android:textSize="14dp"
+                android:background="@color/light_grey_4"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event_contact"
+                android:textSize="14dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/light_grey_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/event_tel"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:layout_below="@id/table_2"
+        android:id="@+id/barre_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/barre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/description_event"
+        android:layout_width="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/light_grey_4"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barre_2"
+        android:textSize="14dp" />
+</RelativeLayout>

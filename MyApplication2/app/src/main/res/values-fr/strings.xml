@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application ISGA</string>
+    <string name="next_string">Suivant</string>
+    <string name="previous_string">Précédent</string>
+    <string name="share_string">Partager</string>
+    <string name="setting_string">Paramètres</string>
+    <string name="share_tool">Partager via</string>
+</resources>

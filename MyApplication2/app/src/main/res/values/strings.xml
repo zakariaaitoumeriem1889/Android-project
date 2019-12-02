@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ISGA application</string>
+    <string name="previous_string">Previous</string>
+    <string name="next_string">Next</string>
+    <string name="share_string">Share</string>
+    <string name="setting_string">Settings</string>
+    <string name="share_tool">Share via</string>
+</resources>
